@@ -9,14 +9,16 @@ let wheelsSelected = 'r1'
 colorsPallete.forEach(li =>
     li.addEventListener('click', () => {
 
+       
         colorsPallete.forEach(span => {
 
             span.classList.remove('selected')
-           
+            console.log(colorsPallete)
         })
 
         li.classList.add('selected') 
-        colorSelected = li.classList[0]
+      console.log(colorSelected = li.classList)
+         colorSelected = li.classList 
         handleShowCar()
 
     })
